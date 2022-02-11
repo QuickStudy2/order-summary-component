@@ -13,9 +13,10 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top 20%;
-    background-color: var(--paler-blue);
+    background-color: var(--pale-blue);
     box-sizing: border-box;
     font-size: 1rem;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 img {
@@ -25,29 +26,42 @@ img {
 h3 {
     margin: 0;
 }
-.plan {
-    font-size: .8rem;
-    /* border: yellow 1px solid; */
-}
-.plan div {
-    /* border: yellowgreen 1px solid; */
-}
-.plan div img {
-    margin: 0;
-    margin-top: .5em;
-    margin-right: .8em;;
-}
-.plan p {
-    margin: 0;
-    margin-top: 5px;
-}
 
 /* 
 ============
 Typography
 ============
 */
+h2 {
+    font-weight: 900;
+}
 
+h2 + p {
+    font-weight: 500;
+    color: var(--desaturated-blue);
+}
+
+
+.change-price {
+    /* text-decoration-skip-ink: none; */
+    text-underline-offset: 1.4px;
+    text-decoration-thickness: 0.5px;
+}
+
+.change-price:hover,
+.change-price:focus {
+    opacity: .7;
+    text-decoration: none;
+}
+
+.price {
+    color: var(--desaturated-blue);
+}
+
+.plan-title,
+.price {
+    font-size: 1rem;
+}
 
 
 /* 
@@ -79,11 +93,16 @@ Layout
     transform: translate(-50%, -50%);
     text-align: center;
     background-color: var(--white);
+    border-radius: 15px;
+}
+
+.card-img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .card-content {
-    padding: 0 1.5em;
-    /* width: 90%; */
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -92,12 +111,17 @@ Layout
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
+    background-color: var(--paler-blue);
+    padding: 1em;
+    border-radius: 15px;
+    margin: 1.5em 0;
 }
 
-.order-plan {
-    padding: 1em;
-    background-color: var(--paler-blue);
-    border: var(--dark-blue) 1px solid;
+.plan div img {
+    margin-right: 1em;
+}
+.price {
+    margin: 0;
 }
 
 .plan {
@@ -107,13 +131,9 @@ Layout
 
 /* 
 ============
-Layout
+Buttons
 ============
 */
-
-.btn-wrapper {
-    margin-top: 1.5em;
-}
 
 .btn {
     display: inline-block;
@@ -121,10 +141,47 @@ Layout
     margin-bottom: 1em;
     text-decoration: none;
     padding: 1em 0;
-    font-weight: 900;
+    font-weight: 700;
+    border-radius: 10px;
 }
 
 .btn-primary {
     background-color: var(--bright-blue);
     color: var(--white);
+    box-shadow: 0 10px 1em hsla(245, 75%, 52%, .5);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    opacity: .7;
+}
+
+.btn-secondary {
+    color: var(--desaturated-blue);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: var(--dark-blue);
+}
+
+
+/* 
+=============
+Media Queries
+=============
+*/
+
+@media (max-width: 500px) {
+    body {
+        background-image: url(/images/pattern-background-mobile.svg);
+        background-position: unset;
+    }
+
+    .plan-title,
+    .price,
+    .change-price {
+        font-size: .9rem;
+    }
+    
 }
