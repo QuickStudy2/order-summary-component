@@ -174,7 +174,8 @@ Media Queries
 
 @media (max-width: 500px) {
     body {
-        background-image: url(order-summary-component/images/pattern-background-mobile.svg);
+        background-image: url(/order-summary-component/images/pattern-background-mobile.svg);
+        background-position: unset;
     }
 
     .plan-title,
