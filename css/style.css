@@ -46,6 +46,7 @@ h2 + p {
     /* text-decoration-skip-ink: none; */
     text-underline-offset: 1.4px;
     text-decoration-thickness: 0.5px;
+    color: var(--bright-blue);
 }
 
 .change-price:hover,
