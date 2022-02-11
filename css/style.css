@@ -9,10 +9,10 @@
 
 body {
     margin: 0;
-    background-image: url(../order-summary-component/images/pattern-background-desktop.svg);
+    background-image: url("./order-summary-component/images/pattern-background-desktop.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center top 20%;
+    background-position: center;
     background-color: var(--pale-blue);
     box-sizing: border-box;
     font-size: 1rem;
@@ -174,7 +174,7 @@ Media Queries
 
 @media (max-width: 500px) {
     body {
-        background-image: url(../order-summary-component/images/pattern-background-mobile.svg);
+        background-image: url(./order-summary-component/images/pattern-background-mobile.svg);
         background-position: unset;
     }
 
