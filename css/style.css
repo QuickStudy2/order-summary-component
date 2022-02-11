@@ -1,0 +1,130 @@
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --paler-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --white: #fff;
+}
+
+body {
+    margin: 0;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top 20%;
+    background-color: var(--paler-blue);
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+h3 {
+    margin: 0;
+}
+.plan {
+    font-size: .8rem;
+    /* border: yellow 1px solid; */
+}
+.plan div {
+    /* border: yellowgreen 1px solid; */
+}
+.plan div img {
+    margin: 0;
+    margin-top: .5em;
+    margin-right: .8em;;
+}
+.plan p {
+    margin: 0;
+    margin-top: 5px;
+}
+
+/* 
+============
+Typography
+============
+*/
+
+
+
+/* 
+============
+Layout
+============
+*/
+
+.sr-only {
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important;
+	-webkit-clip-path: inset(50%) !important;
+		clip-path: inset(50%) !important; 
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;            
+}
+
+.card-container {
+    max-width: 90%;
+    width: 375px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: var(--white);
+}
+
+.card-content {
+    padding: 0 1.5em;
+    /* width: 90%; */
+    margin: 0 auto;
+}
+
+.order-plan {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order-plan {
+    padding: 1em;
+    background-color: var(--paler-blue);
+    border: var(--dark-blue) 1px solid;
+}
+
+.plan {
+    display: flex;
+    align-items: center;
+}
+
+/* 
+============
+Layout
+============
+*/
+
+.btn-wrapper {
+    margin-top: 1.5em;
+}
+
+.btn {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1em;
+    text-decoration: none;
+    padding: 1em 0;
+    font-weight: 900;
+}
+
+.btn-primary {
+    background-color: var(--bright-blue);
+    color: var(--white);
+}
