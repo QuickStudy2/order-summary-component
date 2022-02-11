@@ -9,7 +9,7 @@
 
 body {
     margin: 0;
-    background-image: url(/images/pattern-background-desktop.svg);
+    background-image: url(../order-summary-component/images/pattern-background-desktop.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top 20%;
@@ -174,7 +174,7 @@ Media Queries
 
 @media (max-width: 500px) {
     body {
-        background-image: url(/images/pattern-background-mobile.svg);
+        background-image: url(../order-summary-component/images/pattern-background-mobile.svg);
         background-position: unset;
     }
 
