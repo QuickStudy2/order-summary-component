@@ -12,7 +12,7 @@ body {
     background-image: url(/order-summary-component/images/pattern-background-desktop.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center top 20%;
     /* background-color: var(--pale-blue); */
     box-sizing: border-box;
     font-size: 1rem;
